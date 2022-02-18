@@ -11,10 +11,9 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand">Navbar</a>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+          <div class="d-flex">
+            <input class="form-control me-2" id="filter" type="search" placeholder="Search" aria-label="Search">
+          </div>
         </div>
       </nav>
 
@@ -24,7 +23,7 @@
         
         <div class="card-body">
           <h3 class="card-title">Add Items :</h3>
-          <form class="row g-3">
+          <form class="row g-3" id="addForm">
             <div class="col-auto">
               <label for="AddItem" class="visually-hidden">Add Item</label>
               <input type="text" class="form-control" id="additem" placeholder="Enter the item">
@@ -36,7 +35,7 @@
           <br>
 
           <h3>ITEMS :</h3>
-          <ul class="list-group">
+          <ul class="list-group" id="items">
             <li class="list-group-item">An item <button type="button" class="btn-close float-end"  aria-label="Close"></button></li>
             <li class="list-group-item">A second item <button type="button" class="btn-close float-end" aria-label="Close"></button></li>
             <li class="list-group-item">A third item <button type="button" class="btn-close float-end" aria-label="Close"></button></li>
@@ -45,6 +44,6 @@
           </ul>
         </div>
       </div>
-    
+      <script src="main.js"></script>
 </body>
 </html>
